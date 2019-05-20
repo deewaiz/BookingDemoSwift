@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MainCell" customModule="BookingDemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p1" translatesAutoresizingMaskIntoConstraints="NO" id="cow-Fm-2JJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="ym3-IR-sKb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English - Русский" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLp-lg-dog">
+                        <rect key="frame" x="8" y="62" width="124" height="21"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-h7-qDV">
+                        <rect key="frame" x="8" y="91" width="37" height="21"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoY-55-XA5">
+                        <rect key="frame" x="8" y="120" width="37" height="21"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="yLp-lg-dog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="32e-ff-8vh"/>
+                    <constraint firstItem="cow-Fm-2JJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4qK-P2-V3E"/>
+                    <constraint firstAttribute="trailing" secondItem="cow-Fm-2JJ" secondAttribute="trailing" id="5xa-h2-TNO"/>
+                    <constraint firstAttribute="bottom" secondItem="BoY-55-XA5" secondAttribute="bottom" constant="8" id="A8n-C9-3qY"/>
+                    <constraint firstItem="vyt-h7-qDV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="SCc-lR-LaI"/>
+                    <constraint firstItem="BoY-55-XA5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Xgq-Bf-57F"/>
+                    <constraint firstItem="cow-Fm-2JJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i8F-fi-FkG"/>
+                    <constraint firstItem="BoY-55-XA5" firstAttribute="top" secondItem="vyt-h7-qDV" secondAttribute="bottom" constant="8" id="pO2-ez-RGg"/>
+                    <constraint firstItem="vyt-h7-qDV" firstAttribute="top" secondItem="yLp-lg-dog" secondAttribute="bottom" constant="8" id="xrq-wo-KkX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="BoY-55-XA5" id="ETi-Nr-xRm"/>
+                <outlet property="backgroundImage" destination="cow-Fm-2JJ" id="DMr-v4-Pdh"/>
+                <outlet property="nameLabel" destination="vyt-h7-qDV" id="bBh-l7-DGl"/>
+                <outlet property="parallaxImageHeight" destination="ym3-IR-sKb" id="Npt-zc-PNY"/>
+                <outlet property="parallaxTopConstraint" destination="i8F-fi-FkG" id="d2e-84-6X5"/>
+                <outlet property="typeLabel" destination="yLp-lg-dog" id="j95-hZ-ZV7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="p1" width="1080" height="496"/>
+    </resources>
+</document>
